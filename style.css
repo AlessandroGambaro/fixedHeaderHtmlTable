@@ -1,0 +1,56 @@
+#tableWrapper {
+    overflow-x: scroll;
+    overflow-y: scroll;
+    height: 200px;
+    border-top: 41px solid transparent;
+    border-bottom: 41px solid transparent;
+}
+
+td + td {
+    border-left: 1px solid black;
+}
+
+td, th {
+    border-bottom: 1px solid black;
+    background: #efefef;
+    padding: 10px;
+}
+
+.wrapper {
+    width: 400px;
+    position: relative;
+    border: 1px solid black;
+    background: #efefef;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+thead th {
+    height: 0;
+    line-height: 0;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: transparent;
+    border: none;
+    white-space: nowrap;
+}
+
+    thead th:first-child div {
+        border-left: none;
+    }
+
+    thead th div {
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        top: 0;
+        position: absolute;
+        color: black;
+        padding: 10px;
+        margin-left: -10px;
+        line-height: normal;
+        width: 100%;
+        z-index: 2;
+        text-align: left;
+        font-weight: bold;
+    }
